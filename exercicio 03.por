@@ -2,13 +2,13 @@ programa {
   funcao inicio() {
     inteiro num1, num2, num3, resultado
     cadeia operador
-    escreva ("Digite o 1° número: ")
+    escreva ("Digite o 1Â° nÃºmero: ")
     leia (num1)
-    escreva ("digite o 2° número: ")
+    escreva ("digite o 2Â° nÃºmero: ")
     leia (num2)
-    escreva ("Digite o 3° número: ")
+    escreva ("Digite o 3Â° nÃºmero: ")
     leia (num3)
     resultado = num1 + num2 + num3 
-    escreva ("O resultado é: ", resultado)
+    escreva ("O resultado Ã©: ", resultado)
   }
 }
