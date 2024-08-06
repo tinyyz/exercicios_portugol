@@ -4,9 +4,9 @@ programa {
     escreva ("Informe a sua idade: ")
     leia (idade)
     se (idade >= 18) {
-      escreva ("Você é maior de idade.")
+      escreva ("VocÃª Ã© maior de idade.")
     }senao{
-      escreva ("Você é menor de idade.")
+      escreva ("VocÃª Ã© menor de idade.")
     }
   }
 }
