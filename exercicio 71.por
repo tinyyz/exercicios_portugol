@@ -11,16 +11,16 @@ programa {
           tabela[l][c] = 0
       }
     } 
-    escreva("Desempenho futebolístico de um grupo com  4 times\n\n")
+    escreva("Desempenho futebolÃ­stico de um grupo com  4 times\n\n")
     para (l = 0; l < QTD; l++) {
       soma = 0
-      //escreva ("Informe o nome do ",l+1 ,"º Time: ")  
+      //escreva ("Informe o nome do ",l+1 ,"Âº Time: ")  
       //leia (times[l])
       escreva(times[l],"\n")
       para (c = 0; c < 7; c++) {
         escolha(c){
           caso 1:
-            escreva ("Informe a quantidade de vitórias: ")  
+            escreva ("Informe a quantidade de vitÃ³rias: ")  
             leia(tabela[l][c])  
           pare
           caso 2:
@@ -32,7 +32,7 @@ programa {
             leia(tabela[l][c])  
             pare
           caso 4:
-            escreva ("Informe a quantidade de gols próprios: ")  
+            escreva ("Informe a quantidade de gols prÃ³prios: ")  
             leia(tabela[l][c])  
           pare
           caso 5:
@@ -58,7 +58,7 @@ programa {
             escreva(tabela[l][c], "\n")  
           pare
           caso 1:
-            escreva ("Quantidade de vitórias: ")  
+            escreva ("Quantidade de vitÃ³rias: ")  
             escreva(tabela[l][c], "\n")  
           pare
           caso 2:
@@ -68,7 +68,7 @@ programa {
             escreva ("Quantidade de derrotas: ", tabela[l][c], "\n") 
           pare
           caso 4:
-            escreva ("Quantidade de gols próprios: ", tabela[l][c], "\n")  
+            escreva ("Quantidade de gols prÃ³prios: ", tabela[l][c], "\n")  
           pare
           caso 5:
             escreva ("Quantidade de gols contras: ", tabela[l][c], "\n")  
@@ -102,7 +102,7 @@ programa {
           aux_time = times[i]
           times[i] = times[j]
           times[j] = aux_time                 
-        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] < classificacao[j][2] ){//Mesmo número de Pontos e diferença por que tem mais vitória
+        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] < classificacao[j][2] ){//Mesmo nÃºmero de Pontos e diferenÃ§a por que tem mais vitÃ³ria
           para (inteiro c = 0; c < 8; c++) {  
             temp[c] = classificacao[i][c]
             classificacao[i][c] = classificacao[j][c] 
@@ -111,7 +111,7 @@ programa {
           aux_time = times[i]
           times[i] = times[j]
           times[j] = aux_time     
-        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] < classificacao[j][7] ){//Mesmo número de Pontos, Mesma quantidade de Vitórias e diferença por que tem mais saldo de Gols
+        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] < classificacao[j][7] ){//Mesmo nÃºmero de Pontos, Mesma quantidade de VitÃ³rias e diferenÃ§a por que tem mais saldo de Gols
           para (inteiro c = 0; c < 8; c++) {  
             temp[c] = classificacao[i][c]
             classificacao[i][c] = classificacao[j][c] 
@@ -120,7 +120,7 @@ programa {
           aux_time = times[i]
           times[i] = times[j]
           times[j] = aux_time      
-        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] == classificacao[j][7]  e classificacao[i][5] < classificacao[j][5] ){//Mesmo número de Pontos, Mesma quantidade de Vitórias e Saldo de Gols e diferença por que tem mais Gol Proprio
+        }senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] == classificacao[j][7]  e classificacao[i][5] < classificacao[j][5] ){//Mesmo nÃºmero de Pontos, Mesma quantidade de VitÃ³rias e Saldo de Gols e diferenÃ§a por que tem mais Gol Proprio
           para (inteiro c = 0; c < 8; c++) {  
             temp[c] = classificacao[i][c]
             classificacao[i][c] = classificacao[j][c] 
@@ -129,7 +129,7 @@ programa {
           aux_time = times[i]
           times[i] = times[j]
           times[j] = aux_time    
-        } senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] == classificacao[j][7]  e classificacao[i][5] == classificacao[j][5] ){//Mesmo número de Pontos, Mesma quantidade de Vitórias e Saldo de Gols e diferença por que tem mais Gol Proprio
+        } senao se(classificacao[i][0] == classificacao[j][0] e classificacao[i][2] == classificacao[j][2] e classificacao[i][7] == classificacao[j][7]  e classificacao[i][5] == classificacao[j][5] ){//Mesmo nÃºmero de Pontos, Mesma quantidade de VitÃ³rias e Saldo de Gols e diferenÃ§a por que tem mais Gol Proprio
           inteiro sorteio = u.sorteia(0,1)
           se(sorteio==1){
             para (inteiro c = 0; c < 8; c++) {  
@@ -144,7 +144,7 @@ programa {
         }        
       }
     }
-    escreva("Classificação:\n")
+    escreva("ClassificaÃ§Ã£o:\n")
     escreva("+---------+----+----+----+----+----+----+----+----+\n")
     escreva("| Time    | PG | JG |  V |  E |  D | GP | GC | SG |\n")
     escreva("+---------+----+----+----+----+----+----+----+----+\n")
