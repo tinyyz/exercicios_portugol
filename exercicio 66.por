@@ -3,7 +3,7 @@ programa {
     real n[10], maior=0, menor=0
     inteiro i
     para (i=1; i < 11; i++) {
-    escreva ("Informe o ", i,"° número: ")
+    escreva ("Informe o ", i,"Â° nÃºmero: ")
     leia (n[i-1])
     }
     para (i=0; i < 10; i++) {
@@ -18,7 +18,7 @@ programa {
           menor = n[i]
         }
     }
-      escreva ("O maior número é: ", maior)
-      escreva ("\nO menor número é: ", menor)
+      escreva ("O maior nÃºmero Ã©: ", maior)
+      escreva ("\nO menor nÃºmero Ã©: ", menor)
   }
 }
