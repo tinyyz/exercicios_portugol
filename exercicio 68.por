@@ -13,7 +13,7 @@ programa {
       escreva ("\nTime: ", nome[linha], "\n")
         para (colunas = 0; colunas < 7; colunas ++) {
           se (colunas == 1) {
-            escreva ("Informe a quantidade de vitórias: ")
+            escreva ("Informe a quantidade de vitÃ³rias: ")
             leia (matriz[linha][colunas])          
           } se (colunas == 2) {
             escreva ("Informe a quantidade de empates: ")
@@ -23,7 +23,7 @@ programa {
             escreva ("Informe a quantidade de derrotas: ")
             leia (matriz[linha][colunas])
          } se (colunas == 4) {
-            escreva ("Informe a quantidade de gols próprios: ")
+            escreva ("Informe a quantidade de gols prÃ³prios: ")
             leia (matriz[linha][colunas])
           } se (colunas == 5) {
             escreva ("Informe a quantidade de gols contra: ")
