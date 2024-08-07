@@ -13,14 +13,14 @@ programa {
         media = 0
       escreva ("\nAluno: ", nome[linha], "\n")
       para (coluna = 0; coluna < 4; coluna++) {
-        escreva ("Informe a ",coluna+1," °nota do aluno: ")
+        escreva ("Informe a ",coluna+1," Â°nota do aluno: ")
         leia (matriz[linha][coluna])
         soma = soma + matriz[linha][coluna]
         media = soma / 4
         matriz[linha][4] = media
         //escreva ("linha = ", linha,"\t", "coluna = ", coluna, "\n")
       }
-      escreva ("A média é: ", matriz[linha][4], "\n", "\n")
+      escreva ("A mÃ©dia Ã©: ", matriz[linha][4], "\n", "\n")
     }
   }
 }
