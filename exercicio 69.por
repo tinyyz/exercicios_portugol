@@ -15,14 +15,14 @@ programa {
     faca{
       faca{
         escreva("\nVai jogar [", simbolo, "] em qual posicao?")
-        escreva("\nDigite a linha na posiÁ„o desejada: ")
+        escreva("\nDigite a linha na posi√ß√£o desejada: ")
         leia(linha)
-        escreva("Digite a coluna na posiÁ„o desejada: ")
+        escreva("Digite a coluna na posi√ß√£o desejada: ")
         leia(coluna)
         resp = jogar(jogo, ORDEM, simbolo, linha, coluna)
         //escreva(resp)
         se(resp == falso){
-          escreva("\nJOGADA INV¡LIDA!\n")
+          escreva("\nJOGADA INV√ÅLIDA!\n")
         }
       }enquanto(resp != verdadeiro)
       se(resp){
@@ -36,7 +36,7 @@ programa {
     escreva("\nJOGO FINALIZADO!!!\n")
   }
   funcao mostraVelha(caracter jogo_[][], inteiro qtd){
-    // impress„o do tabuleiro
+    // impress√£o do tabuleiro
     escreva("\n   0   1   2\n") // imprime as colunas    
     escreva(" +---+---+---+\n")
     para(inteiro l=0; l<qtd; l++){
