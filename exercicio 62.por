@@ -3,12 +3,12 @@ programa {
     real media=0, soma=0, notas[4]
     inteiro i
     para (i = 0; i < 4; i ++) {
-      escreva ("Informe a ",i+1 ,"º nota: ")  
+      escreva ("Informe a ",i+1 ,"Âº nota: ")  
       leia (notas[i])
       soma += notas[i]
     }
     media = soma / 4
-    escreva ("A média é: ", media, "\n")
+    escreva ("A mÃ©dia Ã©: ", media, "\n")
     para (i = 0; i < 4; i ++) {
       se (notas[i] > media) {
         escreva (notas[i],"\n")
